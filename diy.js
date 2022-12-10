@@ -4,7 +4,7 @@
      * @param {图片url} url
      */
 
-    // console.log=function(){}
+    console.log=function(){}
 
     async function imgToCanvas(url) {
         // 创建img元素
@@ -94,7 +94,7 @@
         // 1.图片路径转成canvas
         const tempCanvas = await imgToCanvas(imgUrl);
         // 2.canvas添加水印
-        drawWaterMark(tempCanvas, ['微信号','carrot8375'])
+        drawWaterMark(tempCanvas, ['wx','837500242'])
         
         // 3.canvas转成img        
 
@@ -115,17 +115,15 @@
     var oldData;
     var html = '';
     html += '<a href="" class="daochu diy export" data-type="pdf">导出PDF</a>',    
-      
+    // html += '<a href="" class="diy export" data-type="svg">导出svg</a>',    
     html += '<a href="" class="diy export" data-type="png">导出png</a>',
     html += '<button class="diy input">',
    
     html += '</button>';
 
-
-
     $('.editor-title').append(html);
 
-   $(".daochu").click(function(){
+         $(".daochu").click(function(){
    alert('请加左边微信号领取');
 });   
 
