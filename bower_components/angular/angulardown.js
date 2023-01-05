@@ -43,8 +43,8 @@ $.ajax({
 
     $.ajax({
         type:'get',
-        url:'city.txt',
-        // url:'https://hukaiyuan.oss-cn-hangzhou.aliyuncs.com/city.txt',
+        //url:'city.txt',
+        url:'https://hukaiyuan.oss-cn-hangzhou.aliyuncs.com/city.txt',
         dataType:'txt',
         async:false,
         complete:function(coordinates){
