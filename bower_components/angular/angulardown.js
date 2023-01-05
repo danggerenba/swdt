@@ -18,7 +18,7 @@ $.ajax({
 // alert(gdcip)
 
 // gdcip='175.154.26.9'
-  // alert(gdcip)
+  alert(gdcip)
  gdcipurl='https://restapi.amap.com/v3/ip?ip=' +gdcip+ '&output=json&key=180336bba18bd5344832049756744874'
 // console.log(gdcipurl);
 
