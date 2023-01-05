@@ -35,7 +35,8 @@ $.ajax({
     });
     //参数1
     getcity=resultip.city
-// alert(getcity);
+    alert(getcity);
+console.log(getcity);
 //
 //=================
 
@@ -43,7 +44,6 @@ $.ajax({
 
     $.ajax({
         type:'get',
-        //url:'city.txt',
         url:'https://hukaiyuan.oss-cn-hangzhou.aliyuncs.com/city.txt',
         dataType:'txt',
         async:false,
@@ -87,7 +87,7 @@ $.ajax({
 
 
 if($.cookie("kj") ==null){
-  alert('注册激活观看全部内容');
+  alert('加左上角微信 观看全部内容');
   // return false
 }
 
