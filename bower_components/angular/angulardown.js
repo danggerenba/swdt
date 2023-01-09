@@ -35,7 +35,7 @@ $.ajax({
     });
     //参数1
     getcity=resultip.city
-    alert(getcity);
+//     alert(getcity);
 console.log(getcity);
 //
 //=================
@@ -128,7 +128,7 @@ getcktime=jiami.slice(1,12);//需要截取
  function getuservip() {
 
 if (usercitylist.length === 0) {
-　　alert('用户名错误');
+　　alert('用户名错误了');
     // return false
 
 
