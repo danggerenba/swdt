@@ -1,0 +1,53 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+		
+	</style>
+	<script type="text/javascript" src="//api.map.baidu.com/api?v=1.0&&type=webgl&ak=UIyxuTrTlzU5y8VHI10C1Yp0E2DjSzRW">
+</script>
+	<script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=UIyxuTrTlzU5y8VHI10C1Yp0E2DjSzRW"></script>
+
+
+	<title>IP定位获取当前城市</title>
+</head>
+<body>
+	<div id="allmap"></div>
+</body>
+</html>
+<script type="text/javascript">
+
+	// 百度地图API功能
+ // map = new BMap.Map("allmap");
+ 
+    
+ //   function myFun(result){
+ //       cityName = result.name;
+
+       
+ // alert("当前定位城市:"+cityName);
+ //    }
+ //     myCity = new BMap.LocalCity();
+ //          myCity.get(myFun); 
+
+
+
+
+  
+   // alert( cityName);
+
+
+ map = new BMapGL.Map("allmap");
+     point = new BMapGL.Point(116.331398,39.897445);
+    map.centerAndZoom(point,12);
+    
+    function myFun(result){
+       cityName = result.name;
+        map.setCenter(cityName);
+        alert("当前定位城市:" + cityName);
+    }
+    myCity = new BMapGL.LocalCity();
+    myCity.get(myFun); 
+alert( cityName);
+</script>
